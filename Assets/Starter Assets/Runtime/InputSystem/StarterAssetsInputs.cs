@@ -43,10 +43,19 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		public void OnShoot(InputValue value)
+        {
+            Debug.Log("Shoot Triggered");
+			Shoot();
+        }
 #endif
+		private void Shoot()
+        {
+            Debug.Log("REAL SHOOT");
+        }
 
-
-		public void MoveInput(Vector2 newMoveDirection)
+        public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
 		} 
