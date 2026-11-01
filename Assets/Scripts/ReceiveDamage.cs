@@ -24,8 +24,10 @@ public class ReceiveDamage : MonoBehaviour
             Debug.Log("Hit by projectile");
             Destroy(collision.gameObject);
             health -= 25;
+            Debug.Log("Health: " + health);
             if (health <= 0)
             {
+                Debug.Log("Object destroyed");
                 Destroy(gameObject);
             }
         }
