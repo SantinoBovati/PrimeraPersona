@@ -16,6 +16,11 @@ public class enemynavigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+    }
+
+    private void UpdateTarget()
+    {
         agent.destination = target.position;
     }
 }
