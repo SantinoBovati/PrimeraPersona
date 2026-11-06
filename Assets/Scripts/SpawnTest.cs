@@ -8,7 +8,7 @@ public class SpawnTest : MonoBehaviour
 
     void Start()
     {
-        Instantiate(objectToSpawn, spawnposition, transform.rotation);
+        //Instantiate(objectToSpawn, spawnposition, transform.rotation);
     }
 
 
