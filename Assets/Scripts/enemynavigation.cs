@@ -14,34 +14,26 @@ public class enemynavigation : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         EnemyAnimator = GetComponentInChildren<Animator>();
+
+        InvokeRepeating("UpdateTarget", 3f, 2f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
 
         if (agent.velocity.magnitude > 0)
         {
-            EnemyAnimator.SetBool("isMoving", true);
+            EnemyAnimator.SetBool("IsMoving", true);
         }
         else
         {
-            EnemyAnimator.SetBool("isMoving", false);
+            EnemyAnimator.SetBool("IsMoving", false);
         }
     }
 
     private void UpdateTarget()
     {
         agent.destination = target.position;
-
-        if (agent.speed > 0)
-        {
-            EnemyAnimator.SetBool("isMoving", true);
-        }
-        else
-        {
-            EnemyAnimator.SetBool("isMoving", false);
-        }
     }
 }
