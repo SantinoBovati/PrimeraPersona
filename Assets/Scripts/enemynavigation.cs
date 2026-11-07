@@ -9,6 +9,8 @@ public class enemynavigation : MonoBehaviour
 
     public Animator EnemyAnimator;
 
+    public bool isDead = false;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -21,6 +23,12 @@ public class enemynavigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (isDead)
+        {
+            return;
+        }
+
         bool isMoving = agent.velocity.magnitude > 0.1f && !agent.isStopped;
 
         if (isMoving)
@@ -36,5 +44,11 @@ public class enemynavigation : MonoBehaviour
     private void UpdateTarget()
     {
         agent.destination = target.position;
+    }
+
+    public void die()
+    {
+        EnemyAnimator.SetTrigger("die");
+        agent.isStopped = true;
     }
 }

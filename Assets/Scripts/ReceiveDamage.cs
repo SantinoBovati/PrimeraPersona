@@ -12,9 +12,11 @@ public class ReceiveDamage : MonoBehaviour
 
     public Image BarraHealth;
 
+    public enemynavigation enemynavigation;
+
     void Start()
     {
-        
+        enemynavigation = GetComponent<enemynavigation>();
     }
 
 
@@ -36,8 +38,9 @@ public class ReceiveDamage : MonoBehaviour
             if (health <= 0)
             {
                 Debug.Log("Object destroyed");
-                Destroy(gameObject);
+                enemynavigation.die();
             }
         }
     }
+
 }
