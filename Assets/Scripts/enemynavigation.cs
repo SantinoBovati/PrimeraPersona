@@ -15,14 +15,15 @@ public class enemynavigation : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         EnemyAnimator = GetComponentInChildren<Animator>();
 
-        InvokeRepeating("UpdateTarget", 3f, 2f);
+        InvokeRepeating("UpdateTarget", 3f, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool isMoving = agent.velocity.magnitude > 0.1f && !agent.isStopped;
 
-        if (agent.velocity.magnitude > 0)
+        if (isMoving)
         {
             EnemyAnimator.SetBool("IsMoving", true);
         }
