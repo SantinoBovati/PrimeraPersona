@@ -505,6 +505,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &654921228282893555
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +936,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &1013984739530622464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1068,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &1093062718732746802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1200,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &1108292307683401550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,6 +1460,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &1877821114299749459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,6 +1592,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &1919182797778033325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1761,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 6194691007070854186}
   BarraHealth: {fileID: 5136155933857530714}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 448778102552087192}
 --- !u!114 &8319508389343286111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,6 +1778,7 @@ MonoBehaviour:
   agent: {fileID: 0}
   target: {fileID: 0}
   EnemyAnimator: {fileID: 0}
+  isDead: 0
 --- !u!195 &-8210109692130065062
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1980,6 +1995,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &2482873690893022924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,6 +2127,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &2560149910612981402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2354,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &2735703163883569100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +2953,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &3802466680792692656
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3117,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &4041138615179445443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3249,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &4219708362016664792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,6 +3511,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &4922518218028620070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,6 +3832,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &5263530928130644481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4032,6 +4063,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &5711532214138426788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,6 +4195,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &5920897245803518699
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,6 +4455,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &6414764890611777578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,6 +4717,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &6901085685438494767
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,6 +4881,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &6957548111013832819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,6 +5069,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &7211286541106760620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,6 +5233,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &7516628082253836912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5511,6 +5556,8 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}
 --- !u!1 &8111537832731899969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,3 +5936,5 @@ MonoBehaviour:
   health: 100
   HealthText: {fileID: 0}
   BarraHealth: {fileID: 0}
+  enemynavigation: {fileID: 0}
+  canvasdevida: {fileID: 0}

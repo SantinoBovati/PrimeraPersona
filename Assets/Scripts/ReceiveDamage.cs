@@ -14,6 +14,9 @@ public class ReceiveDamage : MonoBehaviour
 
     public enemynavigation enemynavigation;
 
+    public GameObject canvasdevida;
+
+
     void Start()
     {
         enemynavigation = GetComponent<enemynavigation>();
@@ -38,9 +41,24 @@ public class ReceiveDamage : MonoBehaviour
             if (health <= 0)
             {
                 Debug.Log("Object destroyed");
+                Collider col = GetComponent<Collider>();
+                if (col != null)
+                {
+                    col.enabled = false;
+                }
                 enemynavigation.die();
+
+                if (canvasdevida != null)
+                {
+                    canvasdevida.SetActive(false);
+                }
             }
         }
+    }
+
+    public void DestruirEnemigo()
+    {
+        Destroy(gameObject);
     }
 
 }
