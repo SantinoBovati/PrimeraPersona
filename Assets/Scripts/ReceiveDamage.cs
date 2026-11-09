@@ -16,6 +16,8 @@ public class ReceiveDamage : MonoBehaviour
 
     public GameObject canvasdevida;
 
+    private bool isDead = false;
+
 
     void Start()
     {
@@ -38,14 +40,19 @@ public class ReceiveDamage : MonoBehaviour
             HealthText.text = health.ToString();
             BarraHealth.fillAmount = health / 100f;
             Debug.Log("Health: " + health);
-            if (health <= 0)
+            if (health <= 0 && !isDead)
             {
+                isDead = true;
+
                 Debug.Log("Object destroyed");
+
                 Collider col = GetComponent<Collider>();
+
                 if (col != null)
                 {
                     col.enabled = false;
                 }
+
                 enemynavigation.die();
 
                 if (canvasdevida != null)
