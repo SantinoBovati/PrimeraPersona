@@ -48,6 +48,8 @@ public class ReceiveDamage : MonoBehaviour
 
                 Collider col = GetComponent<Collider>();
 
+                DestruirEnemigo();
+
                 if (col != null)
                 {
                     col.enabled = false;
@@ -65,7 +67,23 @@ public class ReceiveDamage : MonoBehaviour
 
     public void DestruirEnemigo()
     {
-        Destroy(gameObject);
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.EnemyKilledIncrement();
+        }
+
+        Destroy(gameObject, 4f);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.GameOver();
+            }
+        }
     }
 
 }
